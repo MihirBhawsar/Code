@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.content {
+  height: 100vh;
+  width: 100vw;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.dynamicDiv{
+  width: 100%;
+  height: 50%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

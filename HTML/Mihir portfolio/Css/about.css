@@ -1,0 +1,97 @@
+.aboutContner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    45deg,
+    #1f2d52 5%,
+    #111730 45%,
+    #101b33 100%
+  );
+  /* background-color: rgb(11 18 35); */
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.aboutHeading {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 28%;
+  color: #ffff;
+}
+.transparentAbout {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 200px;
+  color: #ffffff3a;
+}
+.profile {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.imageContner {
+  width: 45%;
+  height: 100%;
+}
+.imageContner img {
+  width: 100%;
+  height: 300px;
+  border: 10px solid rgba(59, 131, 246, 0.274);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.profileContner {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profileContner h1 {
+  /* font-size: 50px; */
+  color: #ffff;
+}
+.profileDetails {
+  list-style: none; /* Remove default bullets */
+  color: rgb(191 190 203);
+  font-size: 20px;
+}
+
+.profileDetails .head::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #72e2ae; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.contentValue {
+  padding-left: 50px;
+}
+.downloadResume {
+  margin-top: 12px;
+  width: 35%;
+  padding: 10px 10px 10px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #72e2ae 50%, #ffff 50%);
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  transition: background-position 1s;
+}
+
+.downloadResume:hover {
+  background-position: 0 -100%;
+}

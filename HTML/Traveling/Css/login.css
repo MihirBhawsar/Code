@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #250000;
+  font-family: eb_garamondsemibold;
+  background: #f5f4f2;
+}
+.navbar ul li {
+  margin: 0 10px;
+}
+.navbar ul li a {
+  font-size: 20px;
+  color: white;
+  transition: 2s linear;
+}
+
+.navbar {
+  height: 10%;
+  width: 100%;
+  float: right;
+  display: flex;
+  justify-content: right;
+}
+li {
+  display: inline;
+  padding: 20px;
+}
+.loginContner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -999;
+}
+.centerLogin {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formLogin {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.loginHeading {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 24px;
+  line-height: 1;
+}
+.inputbox {
+  width: 80%;
+  height: 50px;
+  font-size: 13px;
+  border: 1px;
+  border-color: #260000;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  background-color: #fff;
+}
+.loginButton {
+  font-size: 20px;
+  width: 80%;
+  height: 60px;
+  border-radius: 5px;
+  color: rgb(248, 248, 248);
+  border: none;
+  text-align: center;
+  background-color: #260000;
+}
+.lastContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.newUser {
+  color: gray;
+}

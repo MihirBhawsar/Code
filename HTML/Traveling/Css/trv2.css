@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.about {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../Image/Deer.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  transition: 1s cubic-bezier(0.178, 0.885, 0.32, 1.275);
+  padding-top: 2%;
+}
+.about-1 {
+  height: 70%;
+  width: 45%;
+
+  /* background-image: url(./Image/Destinations.jpg); */
+  /* background-repeat: no-repeat; */
+}
+.about-2 {
+  height: 45%;
+  width: 61%;
+
+  /* background-image: url(./Image/Events.jpg); */
+}
+.about-3 {
+  height: 54%;
+  width: 55%;
+  background-image: linear-gradient(rgb(80, 9, 13), rgb(221, 79, 79));
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  bottom: 20%;
+  border-radius: 5px;
+  text-align: center;
+}
+.image {
+  height: 90%;
+  width: 90%;
+  border-radius: 5px;
+}
+.image:hover {
+  height: 80%;
+  width: 80%;
+  cursor: pointer;
+  transition: 8s ease-out;
+  transform: scale(5s);
+}

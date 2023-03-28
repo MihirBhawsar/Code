@@ -1,0 +1,25 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.tableHeader {
+  font-size: 20px;
+  float: left;
+  width: 30%;
+  padding: 5px;
+  background-color: rgb(147, 162, 81);
+  border: 1px solid white;
+}
+.tableHeader p {
+  color: white;
+}
+.tableContent {
+  font-size: 15px;
+  float: left;
+  width: 30%;
+  padding: 5px;
+  background-color: rgb(229, 246, 212);
+  border: 1px solid white;
+}
+

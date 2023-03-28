@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  font-family: "Roboto";
+  background-color: rgb(167, 222, 243);
+  /* background-color: #250000; */
+
+  /* background: linear-gradient (to bottom, #ffffff 0%, #250000 100%); */
+  /* background: linear-gradient(to bottom, #2500009a 0%, #250000ee 100%); */
+
+  display: flex;
+  flex-direction: row;
+}
+.img-div {
+  margin-left: 5%;
+}
+.img-div img {
+  width: 550px;
+  height: 750px;
+}
+.content {
+  margin: 0 10px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin-bottom: 2%;
+}
+.content h1 {
+  color: #ff0066;
+}
+.content .tab {
+  position: relative;
+  background-color: #e6e6e6;
+  padding: 0 20px 20px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.content .tab input {
+  appearance: none;
+}
+.content .tab label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.content .tab label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+}
+.content .tab:hover label::after {
+  color: #ff0066;
+}
+.content .tab input:checked ~ label::after {
+  transform: rotate(135deg);
+  color: white;
+}
+.content .tab label h2 {
+  width: 40px;
+  height: 40px;
+  background-color: #ff0066;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.content .tab input:checked ~ label h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 8em;
+  justify-content: flex-end;
+  padding: 20px;
+}
+.content .tab:nth-child(2) label h2 {
+  background: linear-gradient(to top left, #ccccff 0%, #ff99cc 100%);
+}
+.content .tab:nth-child(3) label h2 {
+  background: linear-gradient(to top left, #ccccff 0%, #ff99cc 100%);
+}
+.content .tab:nth-child(4) label h2 {
+  background: linear-gradient(to top left, #ccccff 0%, #ff99cc 100%);
+}
+.content .tab:nth-child(5) label h2 {
+  background: linear-gradient(to top left, #ccccff 0%, #ff99cc 100%);
+}
+.content .tab:nth-child(6) label h2 {
+  background: linear-gradient(to top left, #ccccff 0%, #ff99cc 100%);
+}
+.content .tab:nth-child(7) label h2 {
+  background: linear-gradient(to top left, #ccccff 0%, #ff99cc 100%);
+}
+.content .tab label h3 {
+  position: relative;
+  font-weight: 500;
+  color: #ff0066;
+  z-index: 10;
+}
+.content .tab input:checked ~ label h3 {
+  background: #fff;
+  padding: 2px 10px;
+  color: #ff0066;
+  border-radius: 2px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.content .tab .para {
+  max-height: 0;
+  transition: 1s;
+  overflow: hidden;
+}
+.content .tab input:checked ~ .para {
+  max-height: 100vh;
+}
+.content .tab .para p {
+  position: relative;
+  padding: 10px 0;
+  color: #333;
+  z-index: 10;
+}
+.content .tab input:checked ~ .para p {
+  color: #fff;
+}

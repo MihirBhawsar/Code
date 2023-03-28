@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.contend {
+  width: 100vw;
+  height: 200vh;
+  background-color: aqua;
+}
+div {
+  width: 200px;
+  height: 200px;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+  position: sticky;
+  top: 200px;
+}
+.green {
+  background-color: green;
+}

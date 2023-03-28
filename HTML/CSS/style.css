@@ -1,0 +1,53 @@
+
+*{
+    margin: 2%;
+}
+div{
+    background-color: hsl(0, 22%, 93%);
+    border: 1px solid gray;
+align-content: center;
+margin: 5px;
+border-radius: 15%;
+
+}
+h1{
+    margin-left: 20px;
+    color: red;
+}
+p{ 
+    padding: 10px;
+    color: blue;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.center{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+}
+ul{
+    align-self: flex-start;
+}
+img{
+    margin-top: 20px;
+    radi
+}
+body{
+    background-image: url(child.jpeg);
+}
+.header{
+    margin-left: 50%;
+}
+#context{
+    margin-top: -150px;
+margin-right: 50%;
+border: 2px dashed blue;
+border-radius: 15%;
+}
+#content{
+    border-radius: 5%;
+    border: 2px dotted greenyellow;
+}

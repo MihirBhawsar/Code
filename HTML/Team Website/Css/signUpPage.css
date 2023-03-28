@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body, html {
+  height: 100%;
+}
+.container {
+  height: 100%;
+  background-image: url(../Image/bgf2.jpeg);
+   /* Add the blur effect */
+   filter: blur(4px);
+   -webkit-filter: blur(8px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+.main {
+  z-index: 2;
+  position: absolute;
+  transform: translate(0%, -130%);
+  color: red;
+
+  background-repeat: no-repeat;
+  display: flex;
+  padding-left: 50px;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+}
+.form-box {
+  width: 100%;
+  transform: translate(-50%, 50%);
+  background: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.form-box h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: red;
+  position: relative;
+}
+.form-box h1::after {
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+}
+.input-field {
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  border: 2px solid #ffff;
+  align-items: center;
+  padding-left: 5%;
+}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+form p {
+  text-align: left;
+  font-size: 18px;
+  color: black;
+}
+form p a {
+  text-decoration: none;
+  color: blue;
+}
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-field button {
+  margin-top: 10px;
+  background-color: red;
+  border: 2px solid red;
+  color: #ffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+}
+.input-group {
+  height: 310px;
+}
+
+.btn-field button:hover {
+  background-color: hsla(0, 0%, 0%, 0);
+  color: red;
+}
+.selecter{
+  margin-right: 50px;
+}

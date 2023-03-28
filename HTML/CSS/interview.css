@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.mainContner{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+
+    /* justify-content: space-evenly;
+     flex-direction: row; */
+}
+.first{
+    width: 30%;
+    height: 50%;
+    background-color: aqua;
+}
+.second{
+    width: 30%;
+    height: 50%;
+    background-color: rgb(38, 0, 255);
+}
+.third{
+    width: 30%;
+    height: 50%;
+    background-color: rgb(233, 48, 24);
+}
+.table{
+    border: 1px solid black;
+    
+}

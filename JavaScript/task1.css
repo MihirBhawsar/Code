@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.content {
+  height: 100vh;
+  width: 100vw;
+}
+.msg {
+  font-size: 20px;
+  color: red;
+}
+.submit {
+  border: 2px solid black;
+  padding: 10px;
+  cursor: pointer;
+  width: 100px;
+}
+.task4{
+  height: 20%;
+  width: 100%;
+  background-color: black;
+}
+.div1 {
+  background-color: brown;
+  height: 90%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

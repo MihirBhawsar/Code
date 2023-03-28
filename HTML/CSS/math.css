@@ -1,0 +1,156 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.header {
+  width: 80vw;
+  height: 10vh;
+  margin-bottom: 30px;
+}
+.headTitle {
+  color: #9805e7;
+  font-size: 50px;
+  float: left;
+}
+
+.searchBox {
+  padding: 20px;
+  float: right;
+  background-color: #cbe47a;
+}
+.searchBox button {
+  background-color: #9805e7;
+  margin-left: 50px;
+}
+.searchBox i {
+  margin-left: -25px;
+  color: #9805e7;
+}
+.input-field {
+  text-align: center;
+  border: 1px solid #be8cda;
+}
+.icon {
+  margin-left: -20px;
+}
+.mathsHelp {
+  width: 78vw;
+  padding: 30px 0px 20px 30px;
+  color: rgb(82, 112, 13);
+  background-color: rgb(193, 225, 98);
+}
+
+.topnav {
+  width: 77vw;
+  background-color: rgb(225, 215, 68);
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  text-align: center;
+  padding-left: 50px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #be8cda;
+  text-align: center;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #9805e7;
+  font-size: 30px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: #9805e7;
+}
+
+.topnav > a {
+  border-right: 3px solid #9805e7;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.topnav > a:last-child {
+  border: none;
+}
+.main-content {
+  width: 80vw;
+  margin-top: 30px;
+  content: "";
+  clear: both;
+  display: table;
+  font-family: "Times New Roman", Times, serif;
+}
+.goto {
+  float: left;
+  width: 40%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-top: 30px;
+  color: #9805e7;
+  display: table-cell;
+
+}
+.goto i {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: red;
+}
+.goto i a {
+  font-family: "Times New Roman", Times, serif;
+
+  margin-left: 10px;
+  color: #be8cda;
+}
+
+.goto i a:hover {
+  color: #9805e7;
+  font-size: 30px;
+}
+
+.why {
+  display: table-cell;
+  float: right;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-left: 20px;
+  width: 40%;
+  color: #9805e7;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.why i {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: green;
+}
+.why i a {
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  color: #be8cda;
+}
+
+.why i a:hover {
+  color: #9805e7;
+  font-size: 30px;
+}
+.footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 80vw;
+  padding: 20px;
+  background-color: #f1e87d;
+}

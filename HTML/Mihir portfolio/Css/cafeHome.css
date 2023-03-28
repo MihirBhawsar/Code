@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../Image/cafeHome.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.navBar{
+    height: 10%;
+    width: 100%;
+    padding: 40px;
+}
+.navBar button{
+    float: right;
+    padding: 7px;
+    
+}
+.btn1{
+    /* margin-right: 50px; */
+    background-color: rgb(250,167,4);
+    border: 0px;
+    margin-left: 20px;
+    border-radius: 20px;
+    color: white;
+}
+.btn2{
+    /* background-color: rgb(185, 182, 176); */
+    border: 2px solid rgb(250,167,4);
+    margin-left: 20px;
+    border-radius: 20px;
+    color: rgb(250,167,4);
+    background-color: rgb(242,239,223);
+}
+
+.btn2:hover{
+    background-color: rgb(250,167,4) ;
+}
+.btn1:hover{
+    background-color: rgb(250,167,4) ;
+}
+.middle{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    padding: 150px;
+}
+.left{
+    height: 80%;
+    width: 50%;
+    
+}
+.right{
+    height: 80%;
+    width: 50%;
+    /* background-color: rgb(207, 167, 167); */
+}
+h1{
+    /* color: rgb(136,74,17); */
+    font-size: 30px;
+    background: -webkit-linear-gradient(rgb(174, 62, 6), rgb(212, 189, 103));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p{
+    font-family: sans-serif;
+    margin: 20px;
+    color: rgb(175,166,158);
+    text-align: center;
+    font-size: 20px;
+    max-width: 400px;
+    position: relative;
+  }
+  p:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: rgb(175,166,158);
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  p:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: rgb(175,166,158);
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  .btn2-2{
+    padding: 40px;
+  }
+  .btn3{
+    /* border: 2px solid rgb(250,167,4); */
+    background-color: rgb(250,167,4);
+    margin-left: 20px;
+    border: 0px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    width: 100px;
+  }
+  .btn4{
+    border: 2px solid rgb(250,167,4);
+    margin-left: 20px;
+    border-radius: 20px;
+    color: rgb(250,167,4);
+    padding: 10px;
+    width: 100px;
+  }
