@@ -1,26 +1,26 @@
-// const plus=document.getElementById("plus");
-// const count=document.getElementById("count");
-// const minus=document.getElementById("minus");
-// const reset=document.getElementById("reset");
+const plus=document.getElementById("plus");
+const count=document.getElementById("count");
+const minus=document.getElementById("minus");
+const reset=document.getElementById("reset");
 
-// let countText=0
+let countText=0
 
-// count.innerText=countText;
-// plus.addEventListener("click",(e)=>{
-// countText++;
-// count.innerText=countText;
+count.innerText=countText;
+plus.addEventListener("click",(e)=>{
+countText++;
+count.innerText=countText;
 
-// });
-// minus.addEventListener("click",(e)=>{
-// countText--;
-// count.innerText=countText;
+});
+minus.addEventListener("click",(e)=>{
+countText--;
+count.innerText=countText;
 
-// });
-// reset.addEventListener("click",(e)=>{
-// countText=0;
-// count.innerText=countText;
+});
+reset.addEventListener("click",(e)=>{
+countText=0;
+count.innerText=countText;
 
-// });
+});
 
 // const hisBtn = document.getElementById("hisBtn");
 // const visBtn = document.getElementById("visBtn");
