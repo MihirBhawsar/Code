@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Fira sans", sans-serif;
+  }
+  .contner {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hedingContent{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .decs{
+    width: 50%;
+    height: auto;
+    display: flex;
+  }
+
+  .btn{
+    cursor: pointer;
+    padding: 10px;
+  }
