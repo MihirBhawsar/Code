@@ -7,6 +7,11 @@ suffer.addEventListener("click", (e) => {
   diceImg.classList.remove('diceImg'); // reset animation
   void diceImg.offsetWidth; // trigger reflow
   diceImg.classList.add('diceImg'); // start animation
+  var delayInMilliseconds = 1000; //1 second
+
+setTimeout(function() {
+  //your code to be executed after 1 second
+
   switch (x) {
     case 1:
       diceImg.src = "./IMage/dice1.png";
@@ -29,4 +34,5 @@ suffer.addEventListener("click", (e) => {
     default:
       diceImg.src = "./IMage/dice1.png";
   }
+}, delayInMilliseconds);
 });
