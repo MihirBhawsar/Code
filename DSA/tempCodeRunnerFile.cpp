@@ -1,5 +1,3 @@
-#include <array>
-// #include <vector>
-// #include <cmath>
-// #include <stdint.h>
-// #include <limits>
+ for(int k=0;k<=n;k++){
+            cout<<k<<"-"<<freq[k]<<endl;
+        }
