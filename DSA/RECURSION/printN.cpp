@@ -92,19 +92,97 @@ int minArr(vector<int> &arr, int i)
     return min(minArr(arr, i + 1), arr[i]);
 }
 
-bool find(vector<int> &arr, int idx,int val){
-    if(idx==arr.size()){
+bool find(vector<int> &arr, int idx, int val)
+{
+    if (idx == arr.size())
+    {
         return false;
     }
 
-    if(arr[idx]==val){
+    if (arr[idx] == val)
+    {
         return true;
     }
 
-    find(arr,idx+1,val);
+    find(arr, idx + 1, val);
 }
 
+void firstInx(vector<int> &arr, int idx, int val)
+{
+    if (idx == arr.size())
+    {
+        cout << "element not found";
+        return;
+    }
 
+    if (arr[idx] == val)
+    {
+        cout << idx << endl;
+        return;
+    }
+
+    firstInx(arr, idx + 1, val);
+}
+void lastInx(vector<int> &arr, int size, int val)
+{
+    if (size == 0)
+    {
+        return;
+    }
+    if (arr[size] == val)
+    {
+        cout << size << endl;
+        return;
+    }
+    lastInx(arr, size - 1, val);
+}
+int lastInxRe(vector<int> &arr, int idx, int val){
+if (idx == arr.size())
+    {
+        return -1;
+    }
+   int ans= lastInxRe(arr, idx + 1, val);
+    if(ans!=-1){
+        return ans;
+    }
+   return arr[idx]==val?idx:-1;
+
+}
+
+void allInx(vector<int> &arr, int idx, int val)
+{
+    if (idx == arr.size())
+    {
+        return;
+    }
+    if (arr[idx] == val)
+    {
+        cout << idx << endl;
+    }
+    allInx(arr, idx + 1, val);
+}
+
+void subSequence(string &str,string output,int idx){
+if(idx==str.size()){
+    cout<<output<<" ";
+    return;
+}
+subSequence(str,output,idx+1);
+output+=str[idx];
+subSequence(str,output,idx+1);
+
+
+}
+int subSequenceLength(string que,string ans){
+    if(que.length()==0){
+        cout<<ans<<endl;
+        return 1;
+    }
+    int count=0;
+    count+=subSequenceLength(que.substr(1),ans+que[0]);//include char
+    count+=subSequenceLength(que.substr(1),ans);//exclude char
+    return count;
+}
 
 int main()
 {
@@ -116,11 +194,18 @@ int main()
     // cout<< power(2, 4);
     // int arr[] = {54, 5, 8, 69, 52, 21, 57};
     // printArr(arr, 6);
-    vector<int> arr = {-54, 5, 8, 69, 52, 21, 57};
+    // vector<int> arr = {-52, 21, 8, 69, 52, 21, 52};
     // cout<<maxArr(arr,0);
     // cout<<minArr(arr,0);
 
-    cout<<find(arr,0,52);
+    // cout<<find(arr,0,52);
+    // firstInx(arr,0,52);
+    // lastInx(arr, arr.size(), 21);
+    // allInx(arr,0,52);
+// cout<<lastInxRe(arr,0,21);
 
+string name="abc";
+// subSequence(name,"",0);
+cout<<subSequenceLength(name,"");
     return 0;
 }
