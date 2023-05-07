@@ -20,7 +20,7 @@ int coinsPermutation(vector<int> arr, int tar, string ans)
     }
     return count;
 }
-int coinsPermutationWithRepeat(vector<int> arr, int tar, string ans,vector<bool>vis)
+int coinsPermutationWithOutRepeat(vector<int> arr, int tar, string ans,vector<bool>vis)
 {   
     if (tar == 0)
     {
@@ -37,7 +37,7 @@ int coinsPermutationWithRepeat(vector<int> arr, int tar, string ans,vector<bool>
         if (tar - arr[i] >= 0&&vis[i]==false)
         {
             vis[i]=true;
-            count += coinsPermutationWithRepeat(arr, tar - arr[i], ans + to_string(arr[i]),vis);
+            count += coinsPermutationWithOutRepeat(arr, tar - arr[i], ans + to_string(arr[i]),vis);
             vis[i]=false;
         }
     }
@@ -64,7 +64,7 @@ int coinsCombination(vector<int> arr, int tar, string ans, int index)
     }
     return count;
 }
-int coinsCombinationWithRepeat(vector<int> arr, int tar, string ans, int index)
+int coinsCombinationWithOutRepeat(vector<int> arr, int tar, string ans, int index)
 {
     if (tar == 0)
     {
@@ -80,7 +80,7 @@ int coinsCombinationWithRepeat(vector<int> arr, int tar, string ans, int index)
     {
         if (tar - arr[i] >= 0)
         {
-            count += coinsCombinationWithRepeat(arr, tar - arr[i], ans + to_string(arr[i]), i+1);
+            count += coinsCombinationWithOutRepeat(arr, tar - arr[i], ans + to_string(arr[i]), i+1);
         }
     }
     return count;
@@ -91,7 +91,7 @@ int main()
     int tar = 10;
     // cout<<coinsPermutation(arr,tar,"");
     // cout << coinsCombination(arr, tar, "", 0);
-    // cout << coinsCombinationWithRepeat(arr, tar, "", 0);
+    // cout << coinsCombinationWithOutRepeat(arr, tar, "", 0);
     vector<bool> vis(arr.size(),false);
-    cout << coinsPermutationWithRepeat(arr, tar, "",vis);
+    cout << coinsPermutationWithOutRepeat(arr, tar, "",vis);
 }
