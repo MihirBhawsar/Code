@@ -224,6 +224,7 @@ li a:active {
 }
 .scrollDown {
   /* padding-bottom: 5%; */
+  scroll-behavior: smooth;
   color: #bfbecb;
 }
 .scrollDown:hover {

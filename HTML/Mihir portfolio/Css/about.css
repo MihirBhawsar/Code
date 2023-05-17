@@ -95,3 +95,8 @@
 .downloadResume:hover {
   background-position: 0 -100%;
 }
+
+.downloadResume a {
+  color: #131212;
+  text-decoration: none;
+}
