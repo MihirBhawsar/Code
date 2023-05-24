@@ -270,6 +270,7 @@ public:
         delete node;
         return rv;
     }
+   
 
 public:
     string toString()
@@ -296,7 +297,7 @@ int main()
     LinkedList li;
     for (int i = 1; i < 10; i++)
     {
-        li.addLast(i*10);
+        li.addLast(i * 10);
     }
     cout << li.toString() << endl;
     return 0;

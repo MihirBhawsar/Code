@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottery Registration</title>
+    <link rel="stylesheet" href="./CSS/lottery.css" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Gallo d'Oro</h1>
+      <h2>Download Center</h2>
+    </div>
+    <div class="imageDiv">
+      <div class="download">
+        <h3 style="color: rgb(107, 93, 46)">Your Download</h3>
+        <p>
+          Thank you for your interest in our brochures. You will soon get an
+          email with the download link.
+        </p>
+        <hr color="rgb(107, 93, 46) " size="1" />
+        <p>
+          Maybe you are also interested in participating in our lottery? Fill
+          the form below to get a chance to win one of the following items:
+        </p>
+        <ul>
+          <li>
+            A Super-Barista Coffee Machine' with free coffee of your choice
+          </li>
+          <li>Free attendance to one of our events</li>
+          <li>Free coffee</li>
+        </ul>
+      </div>
+      <div class="register">
+        <h1>Lottery Registration</h1>
+
+        <form>
+          <label for="First Name*"><b>First Name*</b></label
+          ><br />
+          <input
+            type="text"
+            placeholder="Enter First Name"
+            name="First Name"
+            required
+            class="inputbox"
+          />
+          <br />
+          <label for="Last Name*"><b>Last Name*</b></label>
+          <br />
+          <input
+            type="text"
+            placeholder="Enter Last Name"
+            name="Last Name"
+            required
+            class="inputbox"
+          /><br />
+
+          <label for="Mail Address*"><b>Mail Address*</b></label>
+          <br />
+          <input
+            type="email"
+            placeholder="Enter Mail Address"
+            name="email"
+            required
+            class="inputbox"
+          /><br />
+
+          <label><b>Country*</b></label
+          ><br />
+          <select
+            class="inputbox"
+            style="width: 88%"
+            aria-placeholder="Please Select.."
+          >
+            <option disabled selected value="">Please Select..</option>
+            <option>INDIA</option>
+            <option>PAK</option>
+            <option>CHINA</option>
+          </select>
+          <br />
+          <label><b>Region*</b></label
+          ><br />
+          <select
+            class="inputbox"
+            style="width: 88%"
+            aria-placeholder="Please Select.."
+          >
+            <option value="" disabled selected>Please Select..</option>
+            <option>Hindu</option>
+            <option>Bodh</option>
+            <option>Jain</option>
+            <br />
+          </select>
+          <br />
+          <button type="submit" class="signupbtn">Confirm</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
