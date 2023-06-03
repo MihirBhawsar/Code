@@ -2,7 +2,7 @@
 #include <array>
 #include <vector>
 #include <queue>
-
+#include <utility>
 using namespace std;
 
 class Node
@@ -367,6 +367,112 @@ void widthNode(Node *node, int level, vector<int> &minMax)
     widthNode(node->right, level + 1, minMax);
 }
 
+vector<vector<int>> verticalNodePrint(Node *node)
+{
+    vector<int> minMax(2, 0);
+    widthNode(node, 0, minMax);
+
+    int n = minMax[0] - minMax[1] + 1;
+    vector<vector<int>> ans(n);
+
+    queue<pair<Node *, int>> que;
+
+    que.push({node, -minMax[1]});
+
+    while (!que.empty())
+    {
+        int size = que.size();
+        while (size-- > 0)
+        {
+            pair<Node *, int> removePair = que.front();
+            que.pop();
+
+            ans[removePair.second].push_back(removePair.first->data);
+
+            if (removePair.first->left != nullptr)
+            {
+                que.push({removePair.first->left, removePair.second - 1});
+            }
+            if (removePair.first->right != nullptr)
+            {
+                que.push({removePair.first->right, removePair.second + 1});
+            }
+        }
+    }
+    return ans;
+}
+vector<int> bottomView(Node *node)
+{
+    vector<int> minMax(2, 0);
+    widthNode(node, 0, minMax);
+
+    int n = minMax[0] - minMax[1] + 1;
+    vector<int> ans(n);
+
+    queue<pair<Node *, int>> que;
+
+    que.push({node, -minMax[1]});
+
+    while (!que.empty())
+    {
+        int size = que.size();
+        while (size-- > 0)
+        {
+            pair<Node *, int> removePair = que.front();
+            que.pop();
+
+            ans[removePair.second] = removePair.first->data;
+
+            if (removePair.first->left != nullptr)
+            {
+                que.push({removePair.first->left, removePair.second - 1});
+            }
+            if (removePair.first->right != nullptr)
+            {
+                que.push({removePair.first->right, removePair.second + 1});
+            }
+        }
+    }
+    return ans;
+}
+vector<int> topView(Node *node)
+{
+    vector<int> minMax(2, 0);
+    widthNode(node, 0, minMax);
+
+    int n = minMax[0] - minMax[1] + 1;
+    vector<int> ans(n, 0);
+
+    queue<pair<Node *, int>> que;
+
+    que.push({node, -minMax[1]});
+
+    while (!que.empty())
+    {
+        int size = que.size();
+        while (size-- > 0)
+        {
+            pair<Node *, int> removePair = que.front();
+            que.pop();
+            if (ans[removePair.second] == 0)
+            {
+                ans[removePair.second] = removePair.first->data;
+            }
+
+            if (removePair.first->left != nullptr)
+            {
+                que.push({removePair.first->left, removePair.second - 1});
+            }
+            if (removePair.first->right != nullptr)
+            {
+                que.push({removePair.first->right, removePair.second + 1});
+            }
+        }
+    }
+    return ans;
+}
+
+
 int main()
 {
     vector<int> arr = {10, 20, 40, 80, -1, -1, 90, 100, -1, -1, -1, 50, -1, -1, 30, 60, 110, 120, -1, -1, 140, -1, -1, -1, 70, -1, -1};
@@ -402,8 +508,25 @@ int main()
     //     cout<<ele<<" ";
     //    }
 
-    vector<int> minMax(2, 0);
-    widthNode(root,0,minMax);
-    cout<<"width of tree-"<<minMax[0]-minMax[1]<<endl;
+    // vector<int> minMax(2, 0);
+    // widthNode(root,0,minMax);
+    // cout<<"width of tree-"<<minMax[0]-minMax[1]<<endl;
+
+    // vector<vector<int>> ans = verticalNodePrint(root);
+    // for (vector<int> v : ans)
+    // {
+    //     for (int ele : v)
+    //     {
+    //         cout << ele << " ";
+    //     }
+    //     cout << endl;
+    // }
+
+    // vector<int> ans = bottomView(root);
+    vector<int> ans = topView(root);
+    for (int ele : ans)
+    {
+        cout << ele << " ";
+    }
     return 0;
 }
