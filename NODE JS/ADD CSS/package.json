@@ -1,0 +1,18 @@
+{
+  "name": "add-css",
+  "version": "1.0.0",
+  "description": "learn how to add css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "author": "mihir",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.3.0"
+  }
+}

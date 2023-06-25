@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="/products/<%=id %>?_method=patch" method="post">
+        <input type="text" name="name" id="" placeholder="product name">
+        <input type="number" name="price" id="" placeholder="product price">
+        <input type="text" name="sellerName" id="" placeholder="sellerName">
+        <input type="text" name="sellerAddress" id="" placeholder="seller address">
+        <input type="number" name="sellerPhone" id="" placeholder="seller Phone number">
+        <input type="checkbox" name="inStock" id="" value="true">
+        <input type="submit" value="add a new value">
+    </form>
+</body>
+
+</html>
